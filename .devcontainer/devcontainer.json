@@ -3,9 +3,9 @@
 	"image": "ghcr.io/censibal/orcapod:0.1.0",
 	"overrideCommand": false,
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"mounts": [
-		"source=${localWorkspaceFolderBasename}_devcontainer_docker_data,target=/var/lib/docker,type=volume"
-	],
+	// "mounts": [
+	// 	"source=${localWorkspaceFolderBasename}_devcontainer_docker_data,target=/var/lib/docker,type=volume"
+	// ],
 	"remoteEnv": {
 		"RUST_BACKTRACE": "1"
 	},
