@@ -34,7 +34,12 @@
 				"ms-python.python", // Python IDE
 				"ms-toolsai.jupyter", // Jupyter IDE
 				"ms-python.black-formatter" // Python code formatter
-			]
+			], 
+			"settings": {
+				"workbench.editorAssociations": [
+				  { "viewType": "jupyter-notebook", "filenamePattern": "**/*.ipynb" }
+				]
+			  }
 		}
 	}
 }
