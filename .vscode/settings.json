@@ -1,4 +1,5 @@
 {
+    "git.autofetch": false,
     "chat.disableAIFeatures": true,
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
