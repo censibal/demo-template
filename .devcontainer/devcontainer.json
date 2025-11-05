@@ -21,6 +21,11 @@
 		"--cgroupns=host"
 	],
 	"customizations": {
+		"codespaces": {
+			"openFiles": [
+			  "notebooks/demo_setup/00 - orcapod basic.ipynb"
+			]
+		},
 		"vscode": {
 			"extensions": [
 				"tamasfe.even-better-toml", // *.toml language support
