@@ -22,7 +22,7 @@
 	],
 	"customizations": {
 		"codespaces": {
-			"openFiles": []
+			"openFiles": [] // Open nothing at connect
 		},
 		"vscode": {
 			"extensions": [
@@ -35,5 +35,5 @@
 			]
 		}
 	},
-	"postAttachCommand": "code -r 'notebooks/00 - orcapod basic.ipynb'"
+	"postAttachCommand": "cd notebooks && code -r $(ls *.ipynb | sort | head -n1)"
 }
