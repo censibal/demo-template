@@ -35,5 +35,5 @@
 			]
 		}
 	},
-	"postAttachCommand": "code -r 'notebooks/demo_setup/00 - orcapod basic.ipynb'"
+	"postAttachCommand": "code -r 'notebooks/00 - orcapod basic.ipynb'"
 }
