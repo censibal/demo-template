@@ -22,9 +22,7 @@
 	],
 	"customizations": {
 		"codespaces": {
-			"openFiles": [
-			  "notebooks/00 - orcapod basic.ipynb"
-			]
+			"openFiles": []
 		},
 		"vscode": {
 			"extensions": [
@@ -34,12 +32,8 @@
 				"ms-python.python", // Python IDE
 				"ms-toolsai.jupyter", // Jupyter IDE
 				"ms-python.black-formatter" // Python code formatter
-			], 
-			"settings": {
-				"workbench.editorAssociations": {
-					"*.ipynb": "jupyter-notebook"
-				}  
-			}
+			]
 		}
-	}
+	},
+	"postAttachCommand": "code -r 'notebooks/demo_setup/00 - orcapod basic.ipynb'"
 }
