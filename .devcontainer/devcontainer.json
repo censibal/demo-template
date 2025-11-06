@@ -36,10 +36,10 @@
 				"ms-python.black-formatter" // Python code formatter
 			], 
 			"settings": {
-				"workbench.editorAssociations": [
-				  { "viewType": "jupyter-notebook", "filenamePattern": "**/*.ipynb" }
-				]
-			  }
+				"workbench.editorAssociations": {
+					"*.ipynb": "jupyter-notebook"
+				}  
+			}
 		}
 	}
 }
