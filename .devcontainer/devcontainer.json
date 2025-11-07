@@ -35,5 +35,5 @@
 			]
 		}
 	},
-	"postAttachCommand": "cd notebooks && code -r \"$(ls *.ipynb | sort | head -n1)\""
+	"postAttachCommand": "cd notebooks && code \"$(ls *.ipynb | sort | head -n1)\""
 }
