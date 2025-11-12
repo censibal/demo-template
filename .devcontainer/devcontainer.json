@@ -1,6 +1,11 @@
 {
 	"name": "Development",
 	"image": "ghcr.io/censibal/orcapod:0.1.2",
+	"hostRequirements": {
+		"cpus": 2,
+		"memory": "7gb",
+		"storage": "32gb"
+	},
 	"overrideCommand": false,
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"mounts": [
@@ -10,11 +15,6 @@
 		"RUST_BACKTRACE": "1"
 	},
 	"postStartCommand": "mkdir -p data_lake && docker system prune -fa && docker volume prune -f",
-	"hostRequirements": {
-		"cpus": 2,
-		"memory": "7gb",
-		"storage": "32gb"
-	},
 	"runArgs": [
 		"--name=${localWorkspaceFolderBasename}_devcontainer",
 		"--privileged",
@@ -22,7 +22,7 @@
 	],
 	"customizations": {
 		"codespaces": {
-			"openFiles": [] // Open nothing at connect
+			"openFiles": []
 		},
 		"vscode": {
 			"extensions": [
@@ -34,6 +34,5 @@
 				"ms-python.black-formatter" // Python code formatter
 			]
 		}
-	},
-	"postAttachCommand": "cd notebooks && code \"$(ls *.ipynb | sort | head -n1)\""
+	}
 }
