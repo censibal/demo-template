@@ -1,3 +1,4 @@
 data_lake
 .env
 __pycache__
+.untracked
